@@ -8,6 +8,7 @@ public class ex11021{
 			a=s.nextInt();
 			b=s.nextInt();
 			System.out.printf("Case #%d: %d",(i+1),(a+b));
+			System.out.print("\n");
 		}
 	}
 }
