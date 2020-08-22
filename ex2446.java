@@ -22,7 +22,8 @@ public class ex2446{
 		for(i=input-1;i>0;i--){
 			if(i!=0){
 				for(int k=0;k<i;k++) System.out.print(" ");
-			for(j=0;j<(count*2)+1;j++){
+			}
+			for(j=0;j<(count*2)+2;j++){
 				System.out.printf("*");
 			}
 			if(i!=0){
