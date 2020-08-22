@@ -8,16 +8,16 @@ public class ex2523{
 			if(count==input) break;
 			for(int j=0;j<count;j++){
 				System.out.print("*");
-				count++;
 			}
+			count++;
 			System.out.print("\n");
 		}
 		for(int k=input;k>0;k--){
 			if(count==0) break;
 			for(int p=count;p>0;p--){
 				System.out.print("*");
-				count--;
 			}
+			count--;
 			System.out.print("\n");
 		}
 	}
