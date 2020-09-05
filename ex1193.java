@@ -10,9 +10,12 @@ public class ex1193{
 				break;
 			}
 		}
-		int row=(a*2-((k-1)*k))/2;
+		int row=(a*2-((k-1)*k))/2;	
 		int col=k-row+1;
-		System.out.printf("%d/%d",col,row);
+		if(k%2==0)
+			System.out.printf("%d/%d",row,col);
+		else
+			System.out.printf("%d/%d",col,row);
 	}
 }
 /*1193
