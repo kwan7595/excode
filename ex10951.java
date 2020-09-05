@@ -7,6 +7,7 @@ public class ex10951{
 		for(;;){
 			a=s.nextInt();
 			b=s.nextInt();
+			temp=s.nextLine();
 			System.out.printf("%d\n",a+b);
 			if(s.next()=="\n") break;
 		}
