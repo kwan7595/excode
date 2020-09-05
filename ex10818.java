@@ -4,7 +4,7 @@ public class ex10818{
 		Scanner s = new Scanner(System.in);
 		int num=s.nextInt();
 		int no[] = new int[num];
-		int max=0,min=1000000,i=0;
+		int max=-1000001,min=1000001,i=0;
 		for(i=0;i<num;i++){
 			no[i]=s.nextInt();
 			if(no[i]>=max) max=no[i];
