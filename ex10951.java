@@ -4,12 +4,10 @@ public class ex10951{
 		Scanner s = new Scanner(System.in);
 		int a=0,b=0;
 		String temp;
-		for(;;){
+		while(s.hasNextInt()){
 			a=s.nextInt();
 			b=s.nextInt();
-			temp=s.nextLine();
 			System.out.printf("%d\n",a+b);
-			if(s.next()=="\n") break;
 		}
 	}
 }
