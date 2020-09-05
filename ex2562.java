@@ -7,7 +7,7 @@ public class ex2562{
 			no=s.nextInt();
 			if(no>=temp){
 				temp=no;
-				count++;
+				count=i;
 			}
 		}
 		System.out.printf("%d\n%d",temp,count);
