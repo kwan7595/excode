@@ -11,3 +11,7 @@ public class ex10951{
 		}
 	}
 }
+/* ex10951--how to deal with EoF
+hasNextInt()--> if input==no return true, else false
+enter input-->false-->code finish
+*/
