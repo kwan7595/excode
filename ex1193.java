@@ -5,7 +5,7 @@ public class ex1193{
 		int a=s.nextInt();
 		int n=0,k=0;
 		for(n=1;;n++){
-			if(a*2<=n(n+1)){
+			if(a*2<=n*(n+1)){
 				k=n;
 				break;
 			}
