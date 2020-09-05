@@ -10,7 +10,7 @@ public class ex1193{
 				break;
 			}
 		}
-		int row=a*2-((k-1)*k)/2;
+		int row=(a*2-((k-1)*k))/2;
 		int col=k-row+1;
 		System.out.printf("%d/%d",row,col);
 	}
