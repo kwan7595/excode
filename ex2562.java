@@ -7,7 +7,7 @@ public class ex2562{
 			no=s.nextInt();
 			if(no>=temp){
 				temp=no;
-				count=i;
+				count=i+1;
 			}
 		}
 		System.out.printf("%d\n%d",temp,count);
@@ -19,6 +19,6 @@ maximum sort
 use temp&counter //use list
 no=1st no.
 temp = 0,count=0
-if no>=temp temp=no, count++
+if no>=temp temp=no, count=i+1
 print temp,no
 */
