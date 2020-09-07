@@ -23,9 +23,10 @@ public class ex1157{
 				max=counter[i];
 				index=i;
 			}
-			else if(counter[i]==max&&str.length()!=1){
+		}
+		for(i=0;i<26;i++){
+			if(max==counter[i]){
 				System.out.printf("?");
-				count=1;
 				break;
 			}
 		}
