@@ -16,7 +16,7 @@ public class ex2908{
 				a[i]=(A/10)%10;
 				b[i]=(B/10)%10;
 			}
-			else{
+			else if(i==2){
 				a[i]=A%10;
 				b[i]=B%10;
 			}
