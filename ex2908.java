@@ -8,11 +8,11 @@ public class ex2908{
 		A=s.nextInt();
 		B=s.nextInt();
 		for(i=0;i<3;i++){
-			if(i=0){
+			if(i==0){
 				a[i]=A/100;
 				b[i]=B/100;
 			}
-			if(i=1){
+			if(i==1){
 				a[i]=(A/10)%10;
 				b[i]=(B/10)%10;
 			}
