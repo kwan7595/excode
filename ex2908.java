@@ -4,27 +4,27 @@ public class ex2908{
 		Scanner s = new Scanner(System.in);
 		int a[] = new int[3];
 		int b[] = new int[3];
-		int a=0,b=0,i=0;
-		a=s.nextInt();
-		b=s.nextInt();
+		int A=0,B=0,i=0;
+		A=s.nextInt();
+		B=s.nextInt();
 		for(i=0;i<3;i++){
 			if(i=0){
-				a[i]=a/100;
-				b[i]=b/100;
+				a[i]=A/100;
+				b[i]=B/100;
 			}
 			if(i=1){
-				a[i]=(a/10)%10;
-				b[i]=(b/10)%10;
+				a[i]=(A/10)%10;
+				b[i]=(B/10)%10;
 			}
 			else{
-				a[i]=a%10;
-				b[i]=b%10;
+				a[i]=A%10;
+				b[i]=B%10;
 			}
 		}
-		a=a[2]*100+a[1]*10+a[0];
-		b=b[2]*100+b[1]*10+b[0];
-		if(a>b) System.out.printf("%d",a);
-		else System.out.printf("%d",b);
+		A=a[2]*100+a[1]*10+a[0];
+		B=b[2]*100+b[1]*10+b[0];
+		if(A>B) System.out.printf("%d",A);
+		else System.out.printf("%d",B);
 	}
 }
 
