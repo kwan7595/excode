@@ -25,8 +25,9 @@ public class ex1157{
 			}
 		}
 		for(i=0;i<26;i++){
-			if(max==counter[i]){
+			if(max==counter[i]&&index!=i){
 				System.out.printf("?");
+				count=1;
 				break;
 			}
 		}
