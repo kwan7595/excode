@@ -9,6 +9,7 @@ public class ex1157{
 		for(i=0;i<26;i++){
 			counter[i]=0;
 			a[i]=(char)(i+97);
+		}
 		String str = s.nextLine();
 		str= str.toLowerCase();
 		for(int k=0;k<str.length();k++){
@@ -28,7 +29,7 @@ public class ex1157{
 				break;
 			}
 		}
-		if(count!=1) System.out.printf("%c",(index+97));
+		if(count!=1) System.out.printf("%c",(index+65));
 		}
-	}
 }
+
