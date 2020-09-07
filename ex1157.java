@@ -23,7 +23,7 @@ public class ex1157{
 				max=counter[i];
 				index=i;
 			}
-			else if(counter[i]==max){
+			else if(counter[i]==max&&str.length()!=1){
 				System.out.printf("?");
 				count=1;
 				break;
