@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class ex10809{
 	public static void main(String[] args){
 		Scanner s = new Scanner(System.in);
@@ -16,6 +17,6 @@ public class ex10809{
 				if(word[i]==a[j]&&b[j]==-1) b[j]=i;
 			}
 		}
-		for(int j=0;j<26;j++) System.out.printf("%d",b[j]);
+		for(int j=0;j<26;j++) System.out.printf("%d ",b[j]);
 	}
 }
