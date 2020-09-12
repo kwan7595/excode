@@ -7,7 +7,12 @@ public class ex10250{
 		int roomno[] = new int[test];
 		for(int i=0;i<test;i++){
 			for(int j=0;j<3;j++) user[j][i]=s.nextInt();
+			if(user[2][i]%user[0][i]==0){
+				roomno[i]=user[0][i]*100+user[2][i]/user[0][i];
+			}
+			else{
 			roomno[i]= ((user[2][i]/user[0][i])+1)+(user[2][i]%user[0][i])*100;
+			}
 			System.out.printf("%d\n",roomno[i]);
 		}
 	}
