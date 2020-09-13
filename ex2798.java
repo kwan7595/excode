@@ -35,8 +35,8 @@ public class ex2798{
 					else sum-=card[n-1-i-j];
 				}
 			}
-			  }
-		System.out.printf("%d",sum);
+			  }	
+		 System.out.printf("%d",sum);
 	}
 }
 				
