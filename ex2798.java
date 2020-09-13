@@ -17,7 +17,10 @@ public class ex2798{
 				}
 			}
 		}
+		int sums[] = new int[(n*(n-1)*(n-2))/6];
+		int counter=0;
 		int sum=0;
+		int temps=0;
 		Loop1:for(int i=0;i<n-2;i++){
 			sum=card[n-1-i];
 			if(m-sum>0){
@@ -25,18 +28,26 @@ public class ex2798{
 					sum+=card[n-1-i-j];
 					if(m-sum>0){
 						Loop3:for(int k=1;k<n-i-j;k++){
-							sum+=card[n-1-i-j-k];
-								if(m-sum>=0){
-									break Loop1;
+								if(m-sum-card[n-1-i-j-k]>0){
+								  sums[counter]=sum+card[n-1-i-j-k];
+								  counter++;
 								}
-								else sum-=card[n-1-i-j-k];
 							  }
 					}
 					else sum-=card[n-1-i-j];
 				}
 			}
 			  }	
-		 System.out.printf("%d",sum);
+		for(int i=0;i<sums.length;i++){
+			for(int j=1;j<sums.length-i;j++){
+				if(sums[i+j]>=sums[i]){
+					temps=sums[i+j];
+					sums[i+j]=sums[i];
+					sums[i]=temp;
+				}
+			}
+		}
+		System.out.printf("%d",sums[0]);
 	}
 }
 				
