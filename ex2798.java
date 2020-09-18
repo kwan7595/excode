@@ -7,7 +7,7 @@ public class ex2798{
 		m=s.nextInt();
 		int card[] = new int[n];
 		for(i=0;i<n;i++) card[i]=s.nextInt();
-		int j=0;k=0,sum=0,temp=0;
+		int j=0,k=0,sum=0,temp=0;
 		for(i=0;i<n;i++){
 			for(j=1;j<n-i;j++){
 				for(k=1;k<n-i-j;k++){
