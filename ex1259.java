@@ -2,24 +2,25 @@ import java.util.Scanner;
 public class ex1259{
 	public static void main(String[] args){
 		Scanner s = new Scanner(System.in);
-		int n=0,i=0,count=0;
-		String number="",number1="",number2="",number2r="";
+		String n1="",n2="",n3="";	
+		int n=0,counter=0;
 		while(s.nextInt()!=0){
-			n=s.nextInt();
-			number=Integer.toString(n);
-			if(number.length()/2==0){
-				number1=number.substring(0,n/2);
-				number2=number.substring((n/2)+1,n-1);
+			n1=s.next();
+			n=n1.length();
+			if(n/2==0){
+				n2=n1.substring(0,n/2);
+				n3=n1.substring(n/2,n);
 			}
 			else{
-				number1=number.substring(0,(n-1)/2);
-				number2=number.substring(((n-1)/2)+2,n-1);
+				n2=n1.substring(0,(n-1)/2);
+				n3=n1.substring(((n-1)/2)+1,0);
 			}
-			for(i=0;i<number2.length();i++) number2r.charAt(i)=number2.charAt(n-i);
-			if(number2r==number1) System.out.printf("yes\n");
-			else System.out.printf("no\n");
+			for(int i=0;i<n/2;i++){
+				if((int)n2.charAt(i)==(int)n3.charAt(n/2-i)) counter++;
+			}
+			if (counter==n/2) System.out.print("yes");
+			else System.out.print("no");
+			counter=0;
 		}
 	}
 }
-
-			
