@@ -10,8 +10,8 @@ public class ex10814{
 		for(i=0;i<n;i++){
 			str[i]=s.nextLine();
 			no=str[i].indexOf(" ");
-			age[i]=Integer.parseInt(str[i].substring(0,i));
-			str[i]=str[i].substring(i,str[i].length());
+			age[i]=Integer.parseInt(str[i].substring(0,no));
+			str[i]=str[i].substring(no,str[i].length());
 		}
 		int j=0,k=0,temp=0;
 		for(i=0;i<n;i++){
