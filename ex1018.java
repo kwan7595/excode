@@ -16,7 +16,7 @@ public class ex1018{
 		int temp=999999;
 		for(n1=0;n1<n-7;n++){
 			for(m1=0;m1<m-7;m++){
-				for(i=0+n1,i<n1+7;i++){
+				for(i=0+n1;i<n1+7;i++){
 					for(j=0+m1;j<m1+7;j++){
 						nch[i][j]=och[i][j];
 					}
@@ -29,7 +29,7 @@ public class ex1018{
 									nch[i+c][j+e]='W';
 									rm++;
 								}	
-							else if(e/2!=&&nch[i+c][j+e]=='W'){
+							else if(e/2!=0&&nch[i+c][j+e]=='W'){
 									nch[i+c][j+e]='B';
 									rm++;
 								}
@@ -47,19 +47,8 @@ public class ex1018{
 								}
 							}
 						}
-						else{ //odd rows replacing.
-							for(int e=0;e<7;e++){
-								if(e/2==0&&nch[i+c][j+e]!='B'){
-									nch[i+c][j+e]='B';
-									rm++;
-								}
-							else if(e/2!=0&&nch[i+c][j+e]=='B'){
-									nch[i+c][j+e]='W';
-									rm++;
-								}
-							}
-						}
 					}
+				}
 				else{ //whe i,j='B'
 					for(int c=0;c<7;c++){
 						if(c/2==0){//even rows-col replacing.
@@ -68,7 +57,7 @@ public class ex1018{
 									nch[i+c][j+e]='B';
 									rm++;
 								}
-							else if(e/2!=&&nch[i+c][j+e]=='B'){
+							else if(e/2!=0&&nch[i+c][j+e]=='B'){
 									nch[i+c][j+e]='W';
 									rm++;
 								}
@@ -86,18 +75,6 @@ public class ex1018{
 								}
 							}
 						}
-						else{ //odd rows replacing.
-							for(int e=0;e<7;e++){
-								if(e/2==0&&nch[i+c][j+e]!='W'){
-									nch[i+c][j+e]='W';
-									rm++;
-								}
-							else if(e/2!=0&&nch[i+c][j+e]=='W'){
-									nch[i+c][j+e]='B';
-									rm++;
-								}
-							}
-						}
 					}
 				}
 				if(temp>=rm){
@@ -107,7 +84,6 @@ public class ex1018{
 				else rm=0;
 				}
 			}
-		}
 		System.out.printf("%d",temp);
 	}
 }
