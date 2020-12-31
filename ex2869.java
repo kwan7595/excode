@@ -6,13 +6,12 @@ public class ex2869{
 		a=s.nextInt();
 		b=s.nextInt();
 		v=s.nextInt();
-		int h =0,counter=0;
-		while(h<=v){
-			h+=a;
-			counter++;
-			if(h>=v) break;
-			else	h-=b;
+		int h =0,sum=0;
+		if(v/(a-b)>=a) sum=v/(a-b)-a+1;
+		else if(v/(a-b)<a){
+			if(v%(a-b)/(a-b)==0) sum=(v/(a-b))+1;
+			else sum=v/(a-b);
 		}
-		System.out.printf("%d",counter);
+		System.out.printf("%d",sum);
 	}
 }
